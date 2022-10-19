@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">CNTPolice</string>
+    <string name="verify_your_number">Verify Your Number</string>
+    <string name="please_enter_your_mobile_number_to_receive_a_verification_code">Please enter your mobile  number to receive verification code.</string>
+    <string name="enter_your_number">Enter your number</string>
+    <string name="next">Next</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="police_name">Police Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_id">Email ID</string>
+    <string name="select_designation">Select Designation</string>
+    <string name="select_police_station">Select Police Station</string>
+    <string name="police_station_chief">Police Station Chief</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="default_notification_channel_id">100100</string>
+    <string name="police_identity_verification">Police Identity Verification</string>
+    <string name="please_upload_police_identity_card_for_verification_purposes">Please Upload Police Identity Card for verification purposes!</string>
+    <string name="choose">Choose</string>
+    <string name="edit">Edit</string>
+    <string name="upload">Upload</string>
+    <string name="title_activity_sample">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="face_api_key">8FvTCmbgJNLplT4XGVI5spZqFGGa7Img</string>
+    <string name="face_api_secret">tjr-PI0l4IaCJE_3hE7p0L3MVtbC7eSK</string>
+    <string name="title_activity_patrolling">Map</string>
+    <string name="failed_id_desc">We regret that your ID verification has been rejected. But don\'t worry you can retry uploading the ID again to access features of the app.</string>
+    <string name="pending_id_desc">Your Profile and ID Verification is still under process and will be completed within 24 hours. We respect your patience till the time!</string>
+</resources>

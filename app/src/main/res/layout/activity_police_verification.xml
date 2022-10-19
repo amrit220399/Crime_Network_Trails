@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".PoliceVerificationActivity">
+
+    <TextView
+        android:id="@+id/txtID_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:text="@string/police_identity_verification"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imgID_Card"
+        android:layout_width="280dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/txtID_Title"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_id_card" />
+
+    <TextView
+        android:id="@+id/txtID_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgID_Card"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/please_upload_police_identity_card_for_verification_purposes"
+        android:textSize="18sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_ID_Choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtID_desc"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:text="@string/choose" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtID_desc"
+        android:layout_marginTop="10dp"
+        android:animateLayoutChanges="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_ID_Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:visibility="gone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_ID_Upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/green"
+            android:text="@string/upload"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

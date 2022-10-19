@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/item_txtNOC_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="#NOC ID"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:contentPadding="2dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_access_alarm_24"
+            app:tint="@color/grey_icon" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="6dp"
+        app:contentPadding="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardNOC_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_person_pin_24"
+                    app:tint="@color/grey" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="85dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_NOC_fullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Full Name"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+                <TextView
+                    android:id="@+id/item_NOC_dob_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DOB | Place"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" />
+
+                <TextView
+                    android:id="@+id/item_NOC_phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:text="Phone Number"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                    android:textColor="@color/grey_icon"
+                    app:drawableStartCompat="@drawable/ic_baseline_call_24" />
+
+                <TextView
+                    android:id="@+id/item_NOC_occupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Occupation"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                    android:textColor="@color/grey_icon" />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/TL_itemNOC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardNOC_Image"
+                android:layout_marginTop="5dp"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/row_border"
+                        android:padding="4dp"
+                        android:text="Present Address"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/item_NOC_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/row_border"
+                        android:padding="4dp"
+                        android:text="Address" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/row_border"
+                        android:padding="4dp"
+                        android:text="NOC Type"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/item_NOC_nocType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/row_border"
+                        android:padding="4dp"
+                        android:text="Passport Verification" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_itemNOC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TL_itemNOC"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_NOC_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textColor="@color/yellow"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/item_NOC_btnReject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="@color/red"
+                    android:text="Reject"
+                    app:cornerRadius="6dp"
+                    app:icon="@drawable/ic_baseline_cancel_24"
+                    app:iconGravity="textEnd" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/item_NOC_btnAccept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Accept"
+                    app:backgroundTint="@color/green"
+                    app:cornerRadius="6dp"
+                    app:icon="@drawable/ic_baseline_check_circle_24"
+                    app:iconGravity="textEnd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL_itemNOC"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/LL_itemNOC_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="View Details"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/item_NOC_imgArr"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="end"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+                </LinearLayout>
+
+                <TableLayout
+                    android:id="@+id/TL_itemNOC_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:stretchColumns="1"
+                    android:visibility="gone">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/row_border"
+                            android:padding="4dp"
+                            android:text="Father's Name"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/item_NOC_fatherName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/row_border"
+                            android:padding="4dp"
+                            android:text="Father Name" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/row_border"
+                            android:padding="4dp"
+                            android:text="Mother's Name"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/item_NOC_motherName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/row_border"
+                            android:padding="4dp"
+                            android:text="Mother Name" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/row_border"
+                            android:padding="4dp"
+                            android:text="Identification Mark"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/item_NOC_identificationMark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/row_border"
+                            android:padding="4dp"
+                            android:text="Mark" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/row_border"
+                            android:padding="4dp"
+                            android:text="Have Crime Charges?"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/item_NOC_CrimeCharges"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/row_border"
+                            android:padding="4dp"
+                            android:text="NO" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/row_border"
+                            android:padding="4dp"
+                            android:text="Timestamp"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/item_NOC_timestamp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/row_border"
+                            android:padding="4dp"
+                            android:text="dd-MM-yyyy" />
+
+                    </TableRow>
+                </TableLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
+

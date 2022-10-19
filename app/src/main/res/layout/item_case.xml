@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgCase"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="4dp"
+            app:srcCompat="@drawable/ic_case_file" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/item_case_date"
+            android:layout_toEndOf="@+id/imgCase"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_case_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Case Type"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/item_case_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Case Details" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_case_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="2dp"
+            android:text="dd-MM-yyyy" />
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

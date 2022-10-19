@@ -1,0 +1,316 @@
+{
+  "array": [
+    {
+      "id": 1,
+      "name": "PS Div. A",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 2,
+      "name": "PS Div. B",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 3,
+      "name": "PS Div. C",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 4,
+      "name": "PS Div. D",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 5,
+      "name": "PS Div. D",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 6,
+      "name": "PS Civil Lines",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 7,
+      "name": "PS Sadar",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 8,
+      "name": "PS Islamabad",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 9,
+      "name": "PS Chheharta",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 10,
+      "name": "PS Sultanwind",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 11,
+      "name": "PS Gate Hakiman",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 12,
+      "name": "PS Cantonment",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 13,
+      "name": "PS Maqboolpura",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 14,
+      "name": "PS Women",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 15,
+      "name": "PS NRI",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 16,
+      "name": "PS Airport",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 17,
+      "name": "PS Verka",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 18,
+      "name": "PS Majitha Road",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 19,
+      "name": "PS Mohkampura",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 20,
+      "name": "PS Ranjit Avenue",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 21,
+      "name": "PS State Spl. Operation Cell",
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "id": 214,
+      "name": "PS Div No. 1",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 215,
+      "name": "PS Div No. 2",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 216,
+      "name": "PS Div No. 3",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 217,
+      "name": "PS Div No. 4",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 218,
+      "name": "PS Div No. 5",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 219,
+      "name": "PS Div No. 6",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 220,
+      "name": "PS Div No. 7",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 221,
+      "name": "PS Div No. 8",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 222,
+      "name": "PS Model Town",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 223,
+      "name": "PS Sarabha Nagar",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 224,
+      "name": "PS Haibowal",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 225,
+      "name": "PS Sadar",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 226,
+      "name": "PS Jodhewal",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 227,
+      "name": "PS Salem Tabri",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 228,
+      "name": "PS Ladhuwal",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 229,
+      "name": "PS Focal point",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 230,
+      "name": "PS ShimlaPuri",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 231,
+      "name": "PS Sahnewal",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 232,
+      "name": "PS Koom-Kalan",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 233,
+      "name": "PS Dehlon",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 234,
+      "name": "PS Jamalpur",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 235,
+      "name": "PS Dugri",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 236,
+      "name": "PS Daba",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 237,
+      "name": "PS PAU",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 238,
+      "name": "PS Daresi",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 239,
+      "name": "PS Meharaban",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 240,
+      "name": "PS Moti Nagar",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 241,
+      "name": "PS NRI",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 242,
+      "name": "PS Tibba",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 243,
+      "name": "PS Women",
+      "city": "Ludhiana",
+      "state": "Punjab"
+    },
+    {
+      "id": 0,
+      "name": "Others",
+      "city": "NA",
+      "state": "NA"
+    }
+  ]
+}

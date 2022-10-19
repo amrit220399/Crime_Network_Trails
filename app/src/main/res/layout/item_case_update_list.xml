@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp">
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="40dp"
+        android:background="@color/blue" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardRound1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="55dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="12dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="65dp"
+        app:cardBackgroundColor="@color/blue"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/cardRound1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/caseUpdateHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Update Heading"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+        <TextView
+            android:id="@+id/caseUpdateDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Update Details" />
+
+        <TextView
+            android:id="@+id/caseUpdateTimestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timestamp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

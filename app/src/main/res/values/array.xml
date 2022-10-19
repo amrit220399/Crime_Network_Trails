@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="PoliceDesignation">
+        <item>Director General of Police (DGP)</item>a
+        <item>Special Director General of Police (SDG)</item>
+        <item>Additional Director General of Police (ADG)</item>
+        <item>Inspector General of Police (IG)</item>
+        <item>Deputy Inspector General of Police (DIG)</item>
+        <item>Senior Superintendent of Police (SSP)</item>
+        <item>Superintendent of Police (SP)</item>
+        <item>Deputy Superintendent of Police (Dy.SP)</item>
+        <item>Assistant Superintendent of Police (ASP)</item>
+        <item>Inspector</item>
+        <item>Constable</item>
+    </string-array>
+
+    <string-array name="PoliceStations">
+        <item>Jamshedpur</item>
+        <item>Patna</item>
+        <item>Bistupur</item>
+        <item>Ajmer</item>
+        <item>Amritsar</item>
+        <item>Jehanabad</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="MainCrimeTypes">
+        <item>Murder</item>
+        <item>Illegal Trafficking</item>
+        <item>Women Related Crime</item>
+        <item>Children Related Crime</item>
+        <item>Business Related Crime</item>
+        <item>Others</item>
+    </string-array>
+</resources>

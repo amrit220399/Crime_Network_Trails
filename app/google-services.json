@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "353973753527",
+    "project_id": "cntpolice-100",
+    "storage_bucket": "cntpolice-100.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353973753527:android:9e5b7349097c3fb76d5f32",
+        "android_client_info": {
+          "package_name": "com.cnt.police"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353973753527-dlf5psa6hifppi3bfkivm8jva0goko3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cnt.police",
+            "certificate_hash": "db3d9bc3493a01ca7958a7af2aec26b220a1d4e6"
+          }
+        },
+        {
+          "client_id": "353973753527-qdmd1ce073ai1gia829rqtlpq5qug850.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp3jP8TRmHXLF5kaRI_LWrH7G11lDniPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353973753527-qdmd1ce073ai1gia829rqtlpq5qug850.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

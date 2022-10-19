@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/verification_graph"
+    app:startDestination="@id/verificationPendingFragment">
+
+    <fragment
+        android:id="@+id/verificationPendingFragment"
+        android:name="com.cnt.police.VerificationPendingFragment"
+        android:label="Verification Pending"
+        tools:layout="@layout/fragment_verification_pending">
+        <action
+            android:id="@+id/action_verificationPendingFragment_to_verificationFailedFragment"
+            app:destination="@id/verificationFailedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verificationFailedFragment"
+        android:name="com.cnt.police.VerificationFailedFragment"
+        android:label="Verification Failed"
+        tools:layout="@layout/fragment_verification_failed" />
+</navigation>

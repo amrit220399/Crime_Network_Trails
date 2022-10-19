@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/bottom_nav_home">
+
+    <fragment
+        android:id="@+id/bottom_nav_home"
+        android:name="com.cnt.police.ui.fragments.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_bottom_nav_home_to_caseDetailsFragment"
+            app:destination="@id/caseDetailsFragment" />
+        <action
+            android:id="@+id/action_bottom_nav_home_to_createFirActivity"
+            app:destination="@id/createFirActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottom_nav_feeds"
+        android:name="com.cnt.police.ui.fragments.FeedsFragment"
+        android:label="Feeds"
+        tools:layout="@layout/fragment_feeds">
+        <action
+            android:id="@+id/action_bottom_nav_feeds_to_webNewsActivity"
+            app:destination="@id/webNewsActivity" />
+        <action
+            android:id="@+id/action_bottom_nav_feeds_to_createFeedFragment"
+            app:destination="@id/createFeedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottom_nav_appointments"
+        android:name="com.cnt.police.ui.fragments.AppointmentsFragment"
+        android:label="Appointments"
+        tools:layout="@layout/fragment_appointments" />
+    <fragment
+        android:id="@+id/nav_teams"
+        android:name="com.cnt.police.ui.fragments.TeamFragment"
+        android:label="MyTeam"
+        tools:layout="@layout/fragment_team" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.cnt.police.ui.fragments.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <activity
+        android:id="@+id/bottom_nav_patrolling"
+        android:name="com.cnt.police.PatrollingActivity"
+        android:label="Patrolling Mode"
+        tools:layout="@layout/activity_patrolling" />
+    <fragment
+        android:id="@+id/nav_criminals"
+        android:name="com.cnt.police.ui.fragments.CriminalsFragment"
+        android:label="Criminals List"
+        tools:layout="@layout/fragment_criminals" />
+    <fragment
+        android:id="@+id/nav_city_officers"
+        android:name="com.cnt.police.ui.fragments.CityOfficersFragment"
+        android:label="City Officers"
+        tools:layout="@layout/fragment_city_officers" />
+    <dialog
+        android:id="@+id/nav_logout"
+        android:name="com.cnt.police.ui.dialogs.LogoutDialog"
+        android:label="LogoutDialog" />
+    <activity
+        android:id="@+id/webNewsActivity"
+        android:name="com.cnt.police.WebNewsActivity"
+        android:label="activity_web_news"
+        tools:layout="@layout/activity_web_news">
+        <argument
+            android:name="webUrl"
+            android:defaultValue=""
+            app:argType="string" />
+    </activity>
+    <fragment
+        android:id="@+id/caseDetailsFragment"
+        android:name="com.cnt.police.ui.fragments.CaseDetailsFragment"
+        android:label="Case Details"
+        tools:layout="@layout/fragment_case_details">
+        <argument
+            android:name="crimeData"
+            app:argType="com.cnt.police.models.Crime" />
+        <action
+            android:id="@+id/action_caseDetailsFragment_to_criminalProfileActivity"
+            app:destination="@id/criminalProfileActivity" />
+        <action
+            android:id="@+id/action_caseDetailsFragment_to_addCaseUpdateFragment"
+            app:destination="@id/addCaseUpdateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_reported_criminals"
+        android:name="com.cnt.police.ui.fragments.ReportedCriminalsFragment"
+        android:label="Reported Criminals"
+        tools:layout="@layout/fragment_reported_criminals" />
+    <fragment
+        android:id="@+id/createFeedFragment"
+        android:name="com.cnt.police.ui.fragments.CreateFeedFragment"
+        android:label="Create Feed"
+        tools:layout="@layout/fragment_create_feed" />
+    <activity
+        android:id="@+id/criminalProfileActivity"
+        android:name="com.cnt.police.CriminalProfileActivity"
+        android:label="activity_criminal_profile"
+        tools:layout="@layout/activity_criminal_profile">
+        <argument
+            android:name="criminal_id"
+            android:defaultValue=""
+            app:argType="string" />
+    </activity>
+    <fragment
+        android:id="@+id/addCaseUpdateFragment"
+        android:name="com.cnt.police.ui.fragments.AddCaseUpdateFragment"
+        android:label="Case Tracking"
+        tools:layout="@layout/fragment_add_case_update" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.cnt.police.ui.fragments.MyProfileFragment"
+        android:label="My Profile"
+        tools:layout="@layout/fragment_my_profile" />
+    <fragment
+        android:id="@+id/nav_user_complaints"
+        android:name="com.cnt.police.ui.fragments.UserComplaintsFragment"
+        android:label="User Complaints"
+        tools:layout="@layout/fragment_user_complaints" />
+    <activity
+        android:id="@+id/createFirActivity"
+        android:name="com.cnt.police.CreateFirActivity"
+        android:label="Create FIR"
+        tools:layout="@layout/activity_create_fir" />
+
+</navigation>

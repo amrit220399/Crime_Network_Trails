@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.ReportedCriminalsFragment">
+
+    <TextView
+        android:id="@+id/txtNoReportedCriminals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:text="No Criminals Reported Yet!"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerReportedCriminals"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdgeLength="50dp"
+        android:requiresFadingEdge="vertical"
+        tools:listitem="@layout/item_reported_criminal_list" />
+
+
+</RelativeLayout>

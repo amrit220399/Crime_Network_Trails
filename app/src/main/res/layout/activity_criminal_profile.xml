@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CriminalProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:minHeight="750dp">
+
+        <ImageView
+            android:id="@+id/CP_imgCriminal"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="25dp"
+            android:background="@color/white"
+            android:elevation="5dp"
+            android:padding="5dp"
+            android:transitionName="criminal_pic_anim"
+            app:srcCompat="@drawable/ic_thief" />
+
+        <TextView
+            android:id="@+id/CP_txtCriminalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/CP_imgCriminal"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Criminal Name..."
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/CP_txtAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CP_txtCriminalName"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/CP_imgCriminal"
+            android:text="Age"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CP_txtAge"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="8dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:elevation="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="4dp"
+                        android:elevation="5dp"
+                        android:text="DOB"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_baseline_calendar_today_24"
+                        app:drawableTint="@color/blue" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="4dp"
+                        android:elevation="5dp"
+                        android:text="Crimes"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp"
+                        app:drawableStartCompat="@drawable/ic_handcuffs"
+                        app:drawableTint="@color/blue" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/CP_txtDOB"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="4dp"
+                        android:elevation="5dp"
+                        android:text="dd-MM-yyyy"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/CP_txtCrimes"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="4dp"
+                        android:elevation="5dp"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Appearance"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/CP_CriminalAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Face Colour Marks"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Address"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/CP_CriminalAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="House/building Street name"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Crime(s)"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/CP_recyclerCrimes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    tools:listitem="@layout/item_crime_details" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAddNewCrime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="Add Another Crime" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

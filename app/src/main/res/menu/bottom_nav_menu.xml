@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_nav_home"
+        android:icon="@drawable/ic_home"
+
+        android:title="Home" />
+    <item
+        android:id="@+id/bottom_nav_feeds"
+        android:icon="@drawable/ic_campaign"
+
+        android:title="Feed" />
+    <item
+        android:id="@+id/bottom_nav_patrolling"
+        android:icon="@drawable/ic_police_car"
+
+        android:title="Patrolling" />
+    <item
+        android:id="@+id/bottom_nav_face_search"
+        android:icon="@drawable/ic_face_detection"
+
+        android:title="Face Search" />
+    <item
+        android:id="@+id/bottom_nav_appointments"
+        android:icon="@drawable/ic_event"
+
+        android:title="Appointments" />
+</menu>
